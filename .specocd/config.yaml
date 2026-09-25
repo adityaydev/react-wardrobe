@@ -1,0 +1,20 @@
+schema_version: 1
+require_approval: false
+size_cap_kb: 50
+stale_claim_minutes: 60
+enabled_bindings:
+  - claude-code
+  - codex
+jira:
+  api_version: 2
+  qc_transition: QA
+git:
+  mode: single
+  branch_prefix:
+    feature: feature
+    fix: fix
+  base_branch: main
+  remote: origin
+  integration: merge
+  push: true
+  require_approval_to_commit: true

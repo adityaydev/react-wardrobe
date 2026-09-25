@@ -1,0 +1,326 @@
+.docs-shell {
+  min-height: 100vh;
+  background: var(--rw-bg);
+}
+.docs-top {
+  height: 76px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  border-bottom: 1px solid var(--rw-line);
+  background: var(--rw-surface);
+  gap: 20px;
+}
+.docs-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--rw-ink);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 19px;
+}
+.docs-brand > span {
+  display: grid;
+  place-items: center;
+  width: 35px;
+  height: 35px;
+  border: 1px solid var(--rw-line);
+  border-radius: 9px;
+  font:
+    25px Georgia,
+    serif;
+}
+.docs-brand small {
+  font-size: 8px;
+  letter-spacing: 1.4px;
+  margin-left: 20px;
+  color: var(--rw-muted);
+}
+.docs-sidebar {
+  position: fixed;
+  inset: 76px auto 0 0;
+  width: 250px;
+  padding: 24px 22px;
+  overflow: auto;
+  border-inline-end: 1px solid var(--rw-line);
+  background: var(--rw-bg);
+}
+.docs-count {
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  color: var(--rw-muted);
+  padding: 18px 0 8px;
+}
+.docs-sidebar nav h2 {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  margin: 24px 10px 10px;
+  color: var(--rw-muted);
+}
+.docs-sidebar nav a {
+  display: block;
+  text-decoration: none;
+  color: var(--rw-ink);
+  font-size: 12px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin: 2px 0;
+}
+.docs-sidebar nav a:hover {
+  background: var(--rw-surface-subtle);
+}
+.docs-sidebar nav a[aria-current] {
+  background: var(--rw-accent-soft);
+  color: var(--rw-accent);
+  font-weight: 600;
+}
+.docs-sidebar-note {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border-top: 1px solid var(--rw-line);
+  margin-top: 25px;
+  padding-top: 20px;
+  font-size: 11px;
+  color: var(--rw-muted);
+}
+.docs-main {
+  margin-left: 250px;
+  padding: 36px 64px 24px;
+  max-width: 1420px;
+}
+.docs-heading {
+  padding: 32px 0 20px;
+}
+.docs-heading h1 {
+  font:
+    400 clamp(38px, 5vw, 64px)/1.15 Georgia,
+    serif;
+  letter-spacing: -1.7px;
+  margin: 18px 0;
+}
+.docs-heading > p {
+  color: var(--rw-muted);
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 670px;
+}
+.docs-anchor-links {
+  display: flex;
+  gap: 25px;
+  border-bottom: 1px solid var(--rw-line);
+  padding: 4px 0 25px;
+  flex-wrap: wrap;
+}
+.docs-anchor-links a {
+  font-size: 12px;
+  color: var(--rw-muted);
+  text-decoration: none;
+}
+.docs-section {
+  padding-top: 40px;
+  scroll-margin-top: 90px;
+}
+.docs-section h2 {
+  font-size: 20px;
+  letter-spacing: -0.3px;
+  font-weight: 500;
+  margin: 0 0 18px;
+}
+.docs-section-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+.docs-section-heading > span {
+  font-size: 9px;
+  letter-spacing: 1.6px;
+  color: var(--rw-muted);
+}
+.docs-preview-controls {
+  padding: 16px 24px;
+  border: 1px solid var(--rw-line);
+  border-radius: 14px 14px 0 0;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  background: var(--rw-surface-subtle);
+}
+.docs-preview-controls > .rw-field {
+  flex: 0 1 180px;
+  width: 180px;
+  max-width: 100%;
+  min-width: 0;
+}
+.docs-preview-controls .rw-label {
+  font-size: 10px;
+}
+.docs-example {
+  padding: 40px;
+  background: var(--rw-surface);
+  border: 1px solid var(--rw-line);
+  border-top: 0;
+  border-radius: 0 0 14px 14px;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 16px;
+  min-width: 0;
+  overflow: clip;
+}
+.docs-example > .rw-field,
+.docs-example > .rw-slider {
+  max-width: 440px;
+  width: 100%;
+}
+.docs-example--navbar .rw-navbar {
+  position: relative;
+  inset: auto;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+}
+.docs-example--page-header h1 {
+  font-size: 35px;
+}
+.docs-props {
+  table-layout: fixed;
+  width: 100%;
+}
+.docs-props th:first-child {
+  width: 35%;
+}
+.docs-props th:nth-child(2) {
+  width: 40%;
+}
+.docs-props td {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  vertical-align: top;
+  font-size: 12px;
+}
+.docs-props td p {
+  font-size: 11px;
+  color: var(--rw-muted);
+  line-height: 1.7;
+  margin-bottom: 0;
+}
+.docs-props code {
+  font-size: 11px;
+}
+.docs-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 50px;
+  border-top: 1px solid var(--rw-line);
+  padding-top: 25px;
+  font-size: 11px;
+  color: var(--rw-muted);
+}
+.docs-footer a {
+  color: inherit;
+}
+.docs-menu-toggle {
+  display: none;
+}
+.docs-main .rw-code pre {
+  border: 0;
+}
+.docs-main .rw-code {
+  margin-top: 5px;
+}
+@media (min-width: 1700px) {
+  .docs-main {
+    margin-inline: auto;
+    padding-left: 310px;
+  }
+}
+@media (max-width: 1000px) {
+  .docs-main {
+    padding: 30px;
+    margin-left: 230px;
+  }
+  .docs-sidebar {
+    width: 230px;
+  }
+  .docs-brand small {
+    display: none;
+  }
+  .docs-example {
+    padding: 24px;
+  }
+}
+@media (max-width: 760px) {
+  .docs-top {
+    padding: 0 16px;
+    height: 68px;
+  }
+  .docs-top > .rw-inline {
+    gap: 8px;
+  }
+  .docs-top {
+    height: auto;
+    min-height: 68px;
+    flex-wrap: wrap;
+    padding-block: 12px;
+    gap: 12px;
+  }
+  .docs-top > .rw-inline {
+    flex-wrap: wrap;
+  }
+  .docs-brand {
+    font-size: 16px;
+  }
+  .docs-main {
+    margin: 0;
+    padding: 22px 18px;
+  }
+  .docs-sidebar {
+    display: none;
+    inset: 68px 0 0;
+    width: 100%;
+    z-index: 30;
+    border: 0;
+  }
+  .docs-sidebar--open {
+    display: block;
+  }
+  .docs-menu-toggle {
+    display: inline-flex;
+  }
+  .docs-heading {
+    padding-top: 20px;
+  }
+  .docs-example {
+    padding: 20px;
+  }
+  .docs-anchor-links {
+    gap: 15px;
+  }
+  .docs-props th:first-child {
+    width: 30%;
+  }
+  .docs-props th:nth-child(2) {
+    width: 42%;
+  }
+  .docs-preview-controls {
+    padding: 16px;
+    gap: 12px;
+  }
+  .docs-section-heading {
+    flex-wrap: wrap;
+  }
+  .docs-footer {
+    flex-wrap: wrap;
+  }
+}

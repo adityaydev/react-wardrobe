@@ -1,0 +1,2 @@
+# Design
+React Aria remains the interaction foundation. Reuse Wardrobe tokens and controls in composed patterns. Keep stable existing exports; introduce DataGrid as the richer table pattern. A data-driven documentation catalogue provides hash-addressable pages, search, runnable examples, props and usage snippets. Scope is a comprehensive application UI library, not a reimplementation of every upstream low-level primitive or domain scheduler.

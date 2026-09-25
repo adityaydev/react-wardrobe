@@ -1,0 +1,38 @@
+schema_version: 1
+claims:
+  - task_id: T1
+    owner_agent: unknown
+    session_id: unknown:adityay@Adityas-MacBook-Air-2.local
+    status: completed
+    claimed_at: 2026-09-25T09:17:33.970Z
+    last_heartbeat: 2026-09-25T10:11:15.074Z
+  - task_id: T2
+    owner_agent: unknown
+    session_id: unknown:adityay@Adityas-MacBook-Air-2.local
+    status: completed
+    claimed_at: 2026-09-25T09:24:14.298Z
+    last_heartbeat: 2026-09-25T10:11:15.373Z
+  - task_id: T3
+    owner_agent: unknown
+    session_id: unknown:adityay@Adityas-MacBook-Air-2.local
+    status: completed
+    claimed_at: 2026-09-25T09:41:34.943Z
+    last_heartbeat: 2026-09-25T10:11:15.646Z
+  - task_id: T3
+    owner_agent: unknown
+    session_id: unknown:adityay@Adityas-MacBook-Air-2.local
+    status: completed
+    claimed_at: 2026-09-25T19:01:04.114Z
+    last_heartbeat: 2026-09-25T19:02:35.878Z
+  - task_id: T2
+    owner_agent: unknown
+    session_id: unknown:adityay@Adityas-MacBook-Air-2.local
+    status: completed
+    claimed_at: 2026-09-25T19:09:56.637Z
+    last_heartbeat: 2026-09-25T19:13:04.141Z
+  - task_id: T1
+    owner_agent: unknown
+    session_id: unknown:adityay@Adityas-MacBook-Air-2.local
+    status: completed
+    claimed_at: 2026-09-25T19:10:34.120Z
+    last_heartbeat: 2026-09-25T19:13:04.016Z

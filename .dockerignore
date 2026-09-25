@@ -1,0 +1,8 @@
+node_modules
+dist
+showcase-dist
+storybook-static
+.git
+test-results
+playwright-report
+*.tgz
