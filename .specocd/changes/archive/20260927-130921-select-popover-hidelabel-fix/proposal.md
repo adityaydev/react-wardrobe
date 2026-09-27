@@ -3,11 +3,12 @@ schema_version: 1
 change: select-popover-hidelabel-fix
 feature: select-popover-hidelabel-fix
 type: fix
-status: draft
+status: archived
 approved: true
 created_at: 2026-09-27T07:22:53.549Z
 approved_at: 2026-09-27T07:37:42.813Z
 branch: main
+archived_at: 2026-09-27T07:39:21.912Z
 ---
 
 <!-- type: feature or fix. Decides the branch prefix: feature/… or fix/… -->

@@ -1,0 +1,12 @@
+schema_version: 1
+claims:
+  - task_id: T1
+    owner_agent: claude-code
+    session_id: claude-code:adityay@Adityas-MacBook-Air-2.local
+    status: completed
+    claimed_at: 2026-09-27T08:03:11.184Z
+    last_heartbeat: 2026-09-27T08:03:18.649Z
+    git:
+      branch: main
+      start_sha: 8df2bc5e2920ea1d3704dc6849d150512819fc9a
+      end_sha: 8df2bc5e2920ea1d3704dc6849d150512819fc9a

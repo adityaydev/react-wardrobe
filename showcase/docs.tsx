@@ -5,6 +5,7 @@ import * as W from "../src";
 import { catalogue } from "./catalogue";
 import api from "./api.json";
 import examples from "./examples.json";
+import pkg from "../package.json";
 import "./docs.css";
 type PropRow = {
   name: string;
@@ -103,7 +104,9 @@ export function Documentation() {
               value={query}
               onChange={setQuery}
             />
-            <div className="docs-count">{docs.length} components · v0.2</div>
+            <div className="docs-count">
+              {docs.length} components · v{pkg.version}
+            </div>
             <nav aria-label="Component documentation">
               {groups.map((group) => {
                 const matches = docs.filter((d) => d.category === group);

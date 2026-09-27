@@ -1,5 +1,6 @@
 import { NavigationLink } from "./navigation-link";
 import { Documentation } from "./docs";
+import pkg from "../package.json";
 import "../src/styles.css";
 import React, { useEffect, useState } from "react";
 import { createRoot } from "react-dom/client";
@@ -110,7 +111,7 @@ function Gallery({
           ]}
           footer={
             <>
-              <Badge tone="accent">v0.2 · Preview</Badge>
+              <Badge tone="accent">v{pkg.version} · Preview</Badge>
               <p>
                 Considered details.
                 <br />
