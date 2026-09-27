@@ -72,12 +72,14 @@ export interface MultiSelectProps extends Omit<
   "children" | "className"
 > {
   label: string;
+  hideLabel?: boolean;
   options: SelectOption[];
   description?: string;
   errorMessage?: string;
 }
 export function MultiSelect({
   label,
+  hideLabel,
   options,
   description,
   errorMessage,
@@ -92,7 +94,9 @@ export function MultiSelect({
       disabledKeys={options.filter((o) => o.disabled).map((o) => o.id)}
       className="rw-field"
     >
-      <A.Label className="rw-label">{label}</A.Label>
+      <A.Label className={hideLabel ? "rw-label rw-sr-only" : "rw-label"}>
+        {label}
+      </A.Label>
       <A.Button className="rw-select-trigger">
         <A.SelectValue />
         <ChevronDown size={16} />

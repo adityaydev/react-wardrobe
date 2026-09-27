@@ -106,6 +106,7 @@ function ExampleSelect() {
         { id: "alpha", label: "Alpha" },
         { id: "beta", label: "Beta" },
         { id: "gamma", label: "Gamma", disabled: true },
+        { id: "delta", label: "North Campus Multi Speciality Branch" },
       ]}
       defaultSelectedKey="alpha"
     />

@@ -1,6 +1,6 @@
 {
   "name": "react-wardrobe",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A warm, accessible React design system. Shared components, thoughtful motion, and themeable design tokens.",
   "type": "module",
   "license": "MIT",
@@ -44,7 +44,9 @@
     "test:browser": "playwright test",
     "docs:api": "node scripts/generate-api.mjs && node scripts/generate-examples.mjs",
     "format": "prettier --write src showcase stories tests .storybook scripts",
-    "test:examples": "node scripts/check-examples.mjs"
+    "test:examples": "node scripts/check-examples.mjs",
+    "build:website": "npm run build:showcase && cp -r showcase-dist/* website/",
+    "deploy": "npm run build:website && npx firebase-tools deploy --only hosting"
   },
   "peerDependencies": {
     "react": "^18.3.0 || ^19.0.0",

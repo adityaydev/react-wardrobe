@@ -1,0 +1,32 @@
+schema_version: 1
+claims:
+  - task_id: T1
+    owner_agent: claude-code
+    session_id: claude-code:adityay@Adityas-MacBook-Air-2.local
+    status: completed
+    claimed_at: 2026-09-27T07:23:28.183Z
+    last_heartbeat: 2026-09-27T07:23:36.434Z
+    git:
+      branch: main
+      start_sha: 178458b4ebea507b59254cebdf2fb00c0387c3c1
+      end_sha: 178458b4ebea507b59254cebdf2fb00c0387c3c1
+  - task_id: T2
+    owner_agent: claude-code
+    session_id: claude-code:adityay@Adityas-MacBook-Air-2.local
+    status: completed
+    claimed_at: 2026-09-27T07:23:42.381Z
+    last_heartbeat: 2026-09-27T07:23:52.999Z
+    git:
+      branch: main
+      start_sha: 178458b4ebea507b59254cebdf2fb00c0387c3c1
+      end_sha: 178458b4ebea507b59254cebdf2fb00c0387c3c1
+  - task_id: T2
+    owner_agent: claude-code
+    session_id: claude-code:adityay@Adityas-MacBook-Air-2.local
+    status: completed
+    claimed_at: 2026-09-27T07:32:47.487Z
+    last_heartbeat: 2026-09-27T07:32:48.139Z
+    git:
+      branch: main
+      start_sha: 178458b4ebea507b59254cebdf2fb00c0387c3c1
+      end_sha: 178458b4ebea507b59254cebdf2fb00c0387c3c1

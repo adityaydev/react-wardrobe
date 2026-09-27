@@ -294,7 +294,8 @@
   animation: rw-pop var(--rw-fast) reverse;
 }
 .rw-select-popover {
-  width: var(--trigger-width);
+  width: max-content;
+  min-width: var(--trigger-width);
 }
 .rw-select-popover .rw-listbox {
   min-width: 0;
@@ -317,6 +318,16 @@
   border-radius: 7px;
   outline: none !important;
   font-size: 13px;
+  min-width: 0;
+}
+.rw-option > div {
+  min-width: 0;
+  overflow: hidden;
+}
+.rw-option [slot="label"] {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .rw-option[data-focused],
 .rw-menu-item[data-focused] {

@@ -2431,6 +2431,13 @@
         "description": ""
       },
       {
+        "name": "hideLabel",
+        "type": "boolean | undefined",
+        "required": false,
+        "default": "",
+        "description": ""
+      },
+      {
         "name": "isDisabled",
         "type": "boolean | undefined",
         "required": false,
@@ -11988,6 +11995,13 @@
       },
       {
         "name": "hidden",
+        "type": "boolean | undefined",
+        "required": false,
+        "default": "",
+        "description": ""
+      },
+      {
+        "name": "hideLabel",
         "type": "boolean | undefined",
         "required": false,
         "default": "",

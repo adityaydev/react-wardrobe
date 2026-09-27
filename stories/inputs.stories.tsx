@@ -1,11 +1,41 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { catalogue } from "../showcase/catalogue";
+import { Select as WardrobeSelect, Button, Inline } from "../src";
 const meta = {
   title: "Components/Inputs",
   parameters: { layout: "padded" },
 } satisfies Meta;
 export default meta;
 type Story = StoryObj<typeof meta>;
+export const SelectToolbar: Story = {
+  name: "Select (hideLabel toolbar)",
+  render: () => (
+    <Inline>
+      <WardrobeSelect
+        label="Branch"
+        hideLabel
+        placeholder="All branches"
+        options={[
+          { id: "all", label: "All branches" },
+          {
+            id: "north",
+            label: "North Campus Multi Speciality Branch",
+          },
+        ]}
+      />
+      <WardrobeSelect
+        label="Status"
+        hideLabel
+        placeholder="Any status"
+        options={[
+          { id: "any", label: "Any status" },
+          { id: "open", label: "Open" },
+        ]}
+      />
+      <Button variant="secondary">Export</Button>
+    </Inline>
+  ),
+};
 export const TextField: Story = {
   render: () => catalogue.find((c) => c.name === "TextField")!.render(),
 };

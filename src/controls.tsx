@@ -165,6 +165,7 @@ export interface SelectOption {
 }
 export interface SelectProps {
   label: string;
+  hideLabel?: boolean;
   options: SelectOption[];
   selectedKey?: Key | null;
   defaultSelectedKey?: Key;
@@ -179,6 +180,7 @@ export interface SelectProps {
 }
 export function Select({
   label,
+  hideLabel,
   options,
   description,
   errorMessage,
@@ -193,7 +195,9 @@ export function Select({
       disabledKeys={options.filter((o) => o.disabled).map((o) => o.id)}
       className={cx("rw-field", className)}
     >
-      <Label className="rw-label">{label}</Label>
+      <Label className={cx("rw-label", hideLabel && "rw-sr-only")}>
+        {label}
+      </Label>
       <AriaButton className="rw-select-trigger">
         <SelectValue>
           {({ selectedText, defaultChildren }) =>

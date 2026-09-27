@@ -310,6 +310,43 @@ function Gallery({
                 <Switch defaultSelected>Accept new bookings</Switch>
               </Inline>
             </Card>
+            <Card>
+              <div className="card-heading">
+                <h3>A tidy toolbar</h3>
+                <Badge>hideLabel</Badge>
+              </div>
+              <p className="muted">
+                Selects with <code>hideLabel</code> keep an accessible name
+                but drop the stacked visible label, so they sit flush with
+                plain buttons in the same row.
+              </p>
+              <Inline className="toolbar-demo">
+                <Select
+                  label="Branch"
+                  hideLabel
+                  placeholder="All branches"
+                  options={[
+                    { id: "all", label: "All branches" },
+                    {
+                      id: "north",
+                      label: "North Campus Multi Speciality Branch",
+                    },
+                    { id: "south", label: "South Campus" },
+                  ]}
+                />
+                <Select
+                  label="Status"
+                  hideLabel
+                  placeholder="Any status"
+                  options={[
+                    { id: "any", label: "Any status" },
+                    { id: "open", label: "Open" },
+                    { id: "closed", label: "Closed" },
+                  ]}
+                />
+                <Button variant="secondary">Export</Button>
+              </Inline>
+            </Card>
           </div>
         </section>
         <section className="specimen" id="patterns">
