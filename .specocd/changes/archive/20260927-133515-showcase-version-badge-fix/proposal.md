@@ -3,11 +3,12 @@ schema_version: 1
 change: showcase-version-badge-fix
 feature: showcase-version-badge-fix
 type: fix
-status: draft
+status: archived
 approved: true
 created_at: 2026-09-27T08:02:48.613Z
 approved_at: 2026-09-27T08:04:57.492Z
 branch: main
+archived_at: 2026-09-27T08:05:15.516Z
 ---
 
 <!-- type: feature or fix. Decides the branch prefix: feature/… or fix/… -->
