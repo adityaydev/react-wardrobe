@@ -320,11 +320,12 @@
   font-size: 13px;
   min-width: 0;
 }
-.rw-option > div {
+.rw-select-popover .rw-option > div {
   min-width: 0;
   overflow: hidden;
 }
-.rw-option [slot="label"] {
+.rw-select-popover .rw-option [slot="label"] {
+  display: block;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

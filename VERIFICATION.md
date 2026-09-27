@@ -54,3 +54,11 @@ Regression coverage added:
 Root cause of an early false lead, recorded for future reference: testing the long-label option against the docs catalogue's default "select" page example first showed no wrapping. That page's trigger is stretched to `width: 100%` of a wide card by `.rw-select-trigger`, so it was already wider than the long option's natural single-line text — the bug specifically requires a *compact* trigger (content-sized, e.g. inside `.rw-inline`), which is what the toolbar fixture and its regression test now exercise.
 
 Validation: `npm run check` passed (types, 11 unit tests, 63 examples, library build). `npm run test:browser` passed all 15 scenarios (13 prior + 2 new), including light/dark accessibility sweeps over the updated catalogue and Gallery pages. `npm run build:showcase` and `npm run build:storybook` passed. Version bumped to `0.2.1` in `package.json`; `npm pack --dry-run` confirms a clean `react-wardrobe-0.2.1.tgz` (24 files, same contents as 0.2.0 plus the fixes). No npm publication performed — publishing is a separate, deliberate step per the Release section above.
+
+## Select truncation review fixes (2026-09-27)
+
+- Scoped option clipping to select popovers and made their label spans block boxes, enabling ellipsis when viewport-capped. Standalone ListBox and CommandPalette labels retain wrapping.
+- Added three browser layout regressions for capped Select labels and wrapping in both collections. Select and ListBox assertions reproduced the pre-fix failures. Tests substitute longer text into actual rendered component markup.
+- `npm run check` passed: types, 11 unit tests, 63 usage examples, and package build. Final `npm run test:browser` passed all 18 tests, including light/dark accessibility scans.
+- Both lockfile root versions match package.json (0.2.1); `git diff --check` passed.
+- No commit or deployment performed; developer approval remains the commit step.

@@ -1,0 +1,12 @@
+schema_version: 1
+claims:
+  - task_id: T1
+    owner_agent: unknown
+    session_id: unknown:adityay@Adityas-MacBook-Air-2.local
+    status: completed
+    claimed_at: 2026-09-27T16:10:20.918Z
+    last_heartbeat: 2026-09-27T16:14:32.670Z
+    git:
+      branch: main
+      start_sha: 509a09250a95e3a034dd344b714e4954068d6bac
+      end_sha: 509a09250a95e3a034dd344b714e4954068d6bac
